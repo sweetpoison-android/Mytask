@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group >
+        <item android:title="Credit Report"
+            android:id="@+id/navigation_creditReports"
+            android:icon="@drawable/credit"/>
+
+        <item android:title="Debit Report"
+            android:id="@+id/navigation_debitReports"
+            android:icon="@drawable/debit"/>
+
+        <item android:title="Recharge Report"
+            android:id="@+id/navigation_rechargeReport"
+            android:icon="@drawable/rechargereport"/>
+
+        <item android:title="Ledger Report"
+            android:id="@+id/navigationLedger"
+            android:icon="@drawable/ladger"/>
+
+        <item android:title="Credit Balance"
+            android:id="@+id/navigationCreditBalance"
+            android:icon="@drawable/credit"/>
+
+        <item android:title="Debit Balance"
+            android:id="@+id/navigationDebitBalance"
+            android:icon="@drawable/debit"/>
+    </group>
+
+    <item android:title="Account ...">
+
+        <menu>
+            <item android:title="Change Password"
+                android:id="@+id/navigationChangePassword"
+                android:icon="@drawable/key"/>
+        </menu>
+
+    </item>
+
+</menu>

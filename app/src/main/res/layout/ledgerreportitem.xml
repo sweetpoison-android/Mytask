@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ledgerReportItemCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ledgerReportItemMainLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:baselineAligned="false"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Old Bal."
+                        android:textSize="11sp"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:gravity="center_horizontal"
+                       />
+                    <TextView
+                        android:id="@+id/ledgerReportItemOldBal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/logingradientstartcolor"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Trans. Amount "
+                        android:textSize="11sp"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:gravity="center_horizontal"/>
+                    <TextView
+                        android:id="@+id/ledgerReportItemAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/logingradientstartcolor"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Bal. "
+                        android:textSize="11sp"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/ledgerReportItemNewBal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/logingradientstartcolor"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/info"
+                    android:layout_toRightOf="@id/ledgerReportItemMainLayout1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ledgerReportItemMainLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:gravity="center_horizontal"
+                android:layout_below="@id/ledgerReportItemMainLayout1">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Balance Id : "
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transaction Type : "
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transaction To : "
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment Type : "
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/black" />
+
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile No : "
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date : "
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remarks : "
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/ledgerReportItemTransactionId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="86867"
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/logingradientstartcolor" />
+
+                    <TextView
+                        android:id="@+id/ledgerReportItemTransactionType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Debit"
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/logingradientstartcolor"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/ledgerReportItemTransactionTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="12142"
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/logingradientstartcolor"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/ledgerReportItemPaymentType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Balance Transfer"
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/logingradientstartcolor" />
+
+                    <TextView
+                        android:id="@+id/ledgerReportItemMobileNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5464677676"
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/logingradientstartcolor" />
+
+                    <TextView
+                        android:id="@+id/ledgerReportItemTransactionDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10/02/2021"
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/logingradientstartcolor" />
+
+                    <TextView
+                        android:id="@+id/ledgerReportItemRemarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="how are you"
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/logingradientstartcolor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/ledgerReportItemView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/logingradientstartcolor"
+                android:layout_below="@id/ledgerReportItemMainLayout2"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/ledgerReportItemShareImageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ledgerReportItemView"
+                android:padding="5dp"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:id="@+id/ledgerReportItemShareImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/share" />
+                <TextView
+                    android:id="@+id/ledgerReportItemShareTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@id/ledgerReportItemView"
+                    android:layout_toRightOf="@id/ledgerReportItemShareImage"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="5dp"
+                    android:textColor="@color/logingradientstartcolor"/>
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

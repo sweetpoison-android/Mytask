@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+        </shape>
+    </item>
+
+    <item android:bottom="-80dp"
+        android:left="-120dp"
+        android:right="-120dp"
+        android:top="0dp">
+        <shape android:shape="oval">
+            <gradient android:startColor="@color/logingradientstartcolor"
+                android:endColor="@color/loginpagegradientendcolor"
+                android:angle="270"/>
+        </shape>
+    </item>
+
+</layer-list>
